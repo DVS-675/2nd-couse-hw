@@ -1,0 +1,86 @@
+@media (max-width: 767.5px) {
+  .main {
+    background-image: url(./img/mobile/main_img_mob.jpg);
+    padding: 238px 16px 238px;
+
+    &__content {
+      display: flex;
+      align-items: center;
+      flex-direction: column;
+    }
+
+    &__title {
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 39px;
+      display: flex;
+      align-items: center;
+      text-align: center;
+      color: #ffffff;
+    }
+    &__text {
+      width: 343px;
+      font-family: "Montserrat";
+      font-style: normal;
+      font-weight: 300;
+      font-size: 14px;
+      line-height: 22px;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 33px;
+    }
+  }
+  .main__game {
+    padding-left: 16px;
+    padding-right: 16px;
+    &_content {
+      flex-direction: column;
+      align-items: center;
+    }
+    &_1 {
+      background-image: url(./img/mobile/game_1_mob.png);
+    }
+    &_2 {
+      background-image: url(./img/mobile/game_2_mob.png);
+    }
+    &_3 {
+      background-image: url(./img/mobile/game_3_mob.png);
+    }
+  }
+  .container {
+    width: 343px;
+  }
+  .content {
+    padding: 51px 16px 85px;
+    &__game {
+      justify-content: center;
+      &_box {
+        align-items: center;
+        &_title {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 700;
+          font-size: 32px;
+          line-height: 39px;
+          color: #ffffff;
+        }
+        &_text {
+          font-family: "Montserrat";
+          font-style: normal;
+          font-weight: 300;
+          font-size: 14px;
+          line-height: 22px;
+          color: #ffffff;
+          text-align: center;
+        }
+        &_img {
+          padding-top: 64px;
+          width: 344px;
+          height: 236px;
+        }
+      }
+    }
+  }
+}

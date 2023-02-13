@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="main__content center">
+        <h1 class="main__title">
+          Добро пожаловать <br />
+          на мой сайт !
+        </h1>
+        <p class="main__text">
+          Вам предстоит пройти несколько увлекательных игр. Если готов нажимай
+          <b>поехали</b> и <b>приступай</b>
+        </p>
+        <button class="main__button">Поехали!</button>
+      </div>
+    </div>
+    <div class="main__game">
+      <div class="main__game_content center">
+        <div class="main__game_1 container">
+          <a href="#game1" class="main__game_text">Игра 1</a>
+        </div>
+        <div class="main__game_2 container">
+          <a href="#game2" class="main__game_text">Игра 2</a>
+        </div>
+        <div class="main__game_3 container">
+          <a href="#game3" class="main__game_text">Игра 3</a>
+        </div>
+      </div>
+    </div>
+    <div class="content">
+      <div class="content__game center">
+        <div id="game1" class="content__game_box">
+          <h2 class="content__game_box_title">Времена года!</h2>
+          <p class="content__game_box_text">
+            Нажмите кнопку играть, введите номер месяца (от 1 до 12) и вы
+            узнаете к какому времени года он относится
+          </p>
+          <button onclick="timeOfYear();" class="main__button">Играть!</button>
+        </div>
+        <img
+          src="./img/img_gameyeartime.svg"
+          alt="img"
+          class="content__game_box_img"
+        />
+      </div>
+    </div>
+    <div class="content">
+      <div class="content__game reverse center">
+        <div id="game2" class="content__game_box">
+          <h2 class="content__game_box_title">Запомни слова</h2>
+          <p class="content__game_box_text">
+            При нажатии на кнопку играть, вы увидите несколько слов, которые вам
+            необходимо запомнить.
+          </p>
+          <button onclick="guessFruits();" class="main__button">Играть!</button>
+        </div>
+        <img
+          src="./img/img_gamerememberwords.svg"
+          alt="img"
+          class="content__game_box_img"
+        />
+      </div>
+    </div>
+    <script src="script_games.js"></script>
+  </body>
+</html>

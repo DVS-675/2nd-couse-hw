@@ -1,0 +1,250 @@
+@keyframes pulsate-bck {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.main {
+  background-image: url(./img/main_img.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  padding-top: 217px;
+  padding-left: 120px;
+  padding-bottom: 493px;
+}
+.main__title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 78px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+}
+.main__text {
+  width: 481px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  align-items: center;
+  color: #ffffff;
+  margin-top: 32px;
+  margin-bottom: 44px;
+}
+.main__button {
+  width: 234px;
+  height: 48px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  background: #9c0332;
+  border-radius: 30px;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 1s;
+}
+.main__button:hover {
+  animation: pulsate-bck 1.5s linear infinite both;
+}
+
+.main__game {
+  padding: 128px 120px 128px;
+  background-color: #000915;
+}
+.main__game_content {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  row-gap: 32px;
+  -moz-column-gap: 5px;
+       column-gap: 5px;
+}
+.main__game_1 {
+  background-image: url(./img/game_1.png);
+}
+.main__game_2 {
+  background-image: url(./img/game_2.png);
+}
+.main__game_3 {
+  background-image: url(./img/game_3.png);
+}
+.main__game_text {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 32px;
+  color: #ffffff;
+  padding-left: 32px;
+  padding-bottom: 32px;
+  text-decoration: none;
+}
+
+.container {
+  width: 379px;
+  height: 300px;
+  display: flex;
+  align-items: flex-end;
+  border-radius: 16px;
+  transition: all 0.1s;
+}
+.container:hover {
+  border: 3px solid #44d2ff;
+  border-color: #44d2ff;
+  box-sizing: border-box;
+}
+
+.content {
+  background: #000915;
+  padding: 233px 120px 233.5px;
+}
+.content__game {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  row-gap: 30px;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+  justify-content: space-between;
+}
+.content__game_box {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  width: 584px;
+}
+.content__game_box_title {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 59px;
+  color: #ffffff;
+}
+.content__game_box_text {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 300;
+  font-size: 18px;
+  line-height: 32px;
+  color: #ffffff;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.center {
+  max-width: 1700px;
+  margin: auto;
+}
+
+@media (max-width: 767.5px) {
+  .main {
+    background-image: url(./img/mobile/main_img_mob.jpg);
+    padding: 238px 16px 238px;
+  }
+  .main__content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  .main__title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #ffffff;
+  }
+  .main__text {
+    width: 343px;
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 33px;
+  }
+  .main__game {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .main__game_content {
+    flex-direction: column;
+    align-items: center;
+  }
+  .main__game_1 {
+    background-image: url(./img/mobile/game_1_mob.png);
+  }
+  .main__game_2 {
+    background-image: url(./img/mobile/game_2_mob.png);
+  }
+  .main__game_3 {
+    background-image: url(./img/mobile/game_3_mob.png);
+  }
+  .container {
+    width: 343px;
+  }
+  .content {
+    padding: 51px 16px 85px;
+  }
+  .content__game {
+    justify-content: center;
+  }
+  .content__game_box {
+    align-items: center;
+  }
+  .content__game_box_title {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 39px;
+    color: #ffffff;
+  }
+  .content__game_box_text {
+    font-family: "Montserrat";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    color: #ffffff;
+    text-align: center;
+  }
+  .content__game_box_img {
+    padding-top: 64px;
+    width: 344px;
+    height: 236px;
+  }
+}/*# sourceMappingURL=styles.css.map */
